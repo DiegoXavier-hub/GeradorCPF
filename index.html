@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="content">
+        
+        <!-- Estilo Customizado -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+
+        <!-- HTML5 Shiv -->
+        <!--[if lt IE 9]>
+            <script src="assets/JS/html5shiv.js"></script>
+        <![endif]-->
+
+
+        <title>CPF</title>
+        
+        <!-- JavaScript -->
+        <script src="assets/JS/script.js"></script>
+
+    </head>
+    <body>
+
+        <main>
+            <section class="text-head">
+                
+                <div class="tittle">
+                    CPF
+                </div>
+
+                <div class="sub-tittle">Clique no botão 'Gerar CPF' e será criado um CPF válido <br> O algoritmo de validação do CPF calcula o primeiro dígito verificador a partir dos 9 primeiros dígitos do CPF, e em seguida, calcula o segundo dígito verificador a partir dos 9 (nove) primeiros dígitos do CPF, mais o primeiro dígito, obtido na primeira parte.</div>
+
+            </section>
+
+
+
+            <section class="options">
+                <div class="form">
+                    <hr>
+                    <span>Opções da ferramenta:</span>
+                </div>
+
+                <div class="option">
+                    <div>Gerar com pontuação?</div>
+                    <div class="opts">
+                        <div class="opt-yes opt">
+                            <input type="radio" id="radio-1" value="0" name="pontuacao" checked>
+                            <label for="radio-1">Sim</label>
+                        </div>
+
+                        <div class="opt-no opt">
+                            <input type="radio" id="radio-2" value="1" name="pontuacao">
+                            <label for="radio-2">Não</label>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-content">
+                <div class="gerarcpf">
+                    <input type="text" value="" placeholder="000.000.000-00" disabled id="cpf" class="cpf">
+                    <input type="button" value="Gerar CPF" id="button" class="button" onclick="GerarCPF()">
+                </div>
+            </section>
+            
+
+
+            <section class="options">
+                <div class="form">
+                    <hr>
+                    <span>Validar CPF:</span>
+                </div>
+            </section>
+
+            <section class="main-content">
+                <div class="gerarcpf">
+                    <input type="text" value="" placeholder="000.000.000-00" id="cpf-Validate" class="cpf">
+                    <input type="button" value="Validar CPF" id="button-validate" class="button" onclick="ValidarCPF()">
+                </div>
+            </section>
+
+            <div class="message">
+                IMPORTANTE: Este gerador tem como finalidade principal ser um desafio simples para mim e me auxiliar a testar softwares em desenvolvimento.<br>
+                A má utilização dos dados aqui gerados é de total responsabilidade do usuário.<br>
+                Os números são gerados de forma aleatória, respeitando as regras de criação de cada documento.
+            </div>
+        </main>
+
+
+        <footer>
+            <div>&lt/&gt</div>
+            <div>© Diego H. Xavier . 2022</div>
+        </footer>
+        
+    </body>
+</html>
